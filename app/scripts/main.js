@@ -20,25 +20,30 @@ var ThumbnailView = Backbone.View.extend({
  
     className: 'thumbnail',
  
-    template: _.template($('.thumbnail-template').text()),
+    thumbnailTemplate: _.template($('.thumbnail-template').text()),
  
     events: {
         'click' : 'showDetailView'
     },
  
     initialize: function(){
-        $('.container').append(this.el);
+        $('.thumbnailContainer').append(this.el);
         this.render();
     },
  
     render: function(){
-        var renderedTemplate = this.template(this.model.attributes);
-        this.$el.html(renderedTemplate);
+    	if (this.model.attributes.hasOwnProperty('url')) {
+            var renderedTemplate = this.thumbnailTemplate(this.model.attributes);
+        	this.$el.html(renderedTemplate);
+        }
+        
     },
  
     showDetailView: function(){
-        new DetailView({model: this.model});
-    }
+        var detail = new DetailView({model: this.model});
+        	$('.thumbnailContainer').remove();
+        	detail.render()
+    }	
 
 });
 ///////////////THUMBNAIL VIEW END
@@ -47,15 +52,15 @@ var DetailView = Backbone.View.extend({
 
 	className: 'detail',
  
-    template: _.template($('.detail-template').text()),
+    detailTemplate: _.template($('.detail-template').text()),
  
     initialize: function(){
-        $('.container').append(this.el);
+        $('.editContainer').append(this.el);
         this.render();
     },
  
     render: function(){
-        var renderedTemplate = this.template(this.model.attributes);
+        var renderedTemplate = this.detailTemplate(this.model.attributes);
         this.$el.html(renderedTemplate).removeClass('thumbnail');
     },
 });

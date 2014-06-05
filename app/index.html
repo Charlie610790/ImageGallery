@@ -25,11 +25,36 @@
 
 
  
-        <div class="container"></div>
-         <script type="text/template" class="thumbnail-template thumbnail">
-            <img src="<%= url %>" width="180" height="135">
+        <div class="container">
+            <div class="thumbnailContainer">
+                
+            </div>
+            <div class="editContainer">
+                
+            </div>
+        </div>
+
+
+
+         <script type="text/template" class="thumbnail-template">
+            <img src="<%= url %>" width="180" height="135"/>
         </script>
 
+        <script type="text/template" class="detail-template">
+            <img src="<%= url %>" width="400" height="400"/>
+            <BR>
+            <div class="comment-box-field">
+                <label for="text2">Comments:
+                    <input class="input" type="text" maxlength="380" name="commentbox" placeholder="Comment Here" id="commentbox" />
+                </label>
+            </div>
+            <BR>
+            <div class="comment-box-field">
+                <label for="text2">URL:
+                    <input class="urlInput" type="text" maxlength="380" name="commentbox" placeholder="Comment Here" id="commentbox" />
+                </label>
+            </div>
+        </script>
 
 
 
@@ -58,8 +83,6 @@
         </script>
  
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/image-model.js"></script>
-        <script src="scripts/thumbnail-view.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
