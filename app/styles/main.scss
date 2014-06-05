@@ -2,11 +2,25 @@
 // endbower
 
 body {
-    background: #fafafa;
+    background: #cacaca;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
+
 }
 
 .thumbnail {
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+}
 
+.detail {
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: #cacaca;
 }
