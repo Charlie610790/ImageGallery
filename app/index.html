@@ -41,18 +41,22 @@
         </script>
 
         <script type="text/template" class="detail-template">
-            <img src="<%= url %>" width="400" height="400"/>
+            <img src="<%= url %>" width="500" height="500"/>
             <BR>
             <div class="comment-box-field">
                 <label for="text2">Comments:
-                    <input class="input" type="text" maxlength="380" name="commentbox" placeholder="Comment Here" id="commentbox" />
+                    <input value="<%= comments %>" class="input" type="text" maxlength="380" name="commentbox" placeholder="Comment Here" id="commentbox" />
                 </label>
+                <div class="commentSubmitButton">Submit
+                    </div>
             </div>
             <BR>
             <div class="comment-box-field">
                 <label for="text2">URL:
-                    <input class="urlInput" type="text" maxlength="380" name="commentbox" placeholder="Comment Here" id="commentbox" />
+                    <input value="<%= url %>" class="urlInput" type="text" maxlength="380" name="commentbox" placeholder="Comment Here" id="commentbox" />
                 </label>
+                <div class="urlSubmitButton">Submit
+                    </div>
             </div>
         </script>
 

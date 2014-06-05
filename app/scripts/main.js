@@ -4,6 +4,7 @@ var Photo = Backbone.Model.extend({
     idAttribute: '_id',
 
     defaults: {
+    	comments: 'No Comments',
         url: 'http://37.media.tumblr.com/tumblr_mdgfpehkYN1r8cvzdo1_500.gif'
     },
 });

@@ -48,7 +48,7 @@ input {
     padding: 10px;
     background: rgba(255,255,255,0.5);
     margin: 15px 0 0px 10px;
-    width: 273px;
+    width: 263px;
 }
 
 .urlInput {
@@ -66,5 +66,74 @@ input {
     padding: 10px;
     background: rgba(255,255,255,0.5);
     margin: 0px 0 10px 10px;
-    width: 320px;
+    width: 310px;
+}
+
+.commentSubmitButton {
+    display: inline-block;
+    margin-top: 15px;
+    float: right;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    cursor: pointer;
+    text-shadow: 0px -1px 0px black;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:hover {
+        -webkit-filter: brightness(120%); 
+        -moz-filter: brightness(120%);
+        -o-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+
+    &:active {
+        -webkit-filter: brightness(80%); 
+        -moz-filter: brightness(80%);
+        -o-filter: brightness(80%);
+        filter: brightness(80%);
+    }
+}
+
+.urlSubmitButton {
+    display: inline-block;
+    float: right;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    cursor: pointer;
+    text-shadow: 0px -1px 0px black;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:hover {
+        -webkit-filter: brightness(120%); 
+        -moz-filter: brightness(120%);
+        -o-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+
+    &:active {
+        -webkit-filter: brightness(80%); 
+        -moz-filter: brightness(80%);
+        -o-filter: brightness(80%);
+        filter: brightness(80%);
+    }
 }
