@@ -19,17 +19,31 @@ body {
 }
 
 .container {
+    display: inline-block;
     margin: 0px auto;
-    width: 1000px;
+    width: 1200px;
     height: 1000px;
     background-color: #cacaca;
 }
 
 .thumbnailContainer {
+    float: right;
+    width: 760px;
+    background-color: #ffffff;
+    height: 600px;
+    display: inline-block;
+    border: 2px solid black;
 
 }
 
 .editContainer {
+    display: inline-block;
+    float: left;
+    padding: 15px;
+    background-color: #ffffff;
+    height: 570px;
+    width: 380px;
+    border: 2px solid black;
 
 }
 
@@ -136,4 +150,29 @@ input {
         -o-filter: brightness(80%);
         filter: brightness(80%);
     }
+}
+
+.saveButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 20px;
+        margin-top: 14px;
+        margin-right: 10px;
+        margin-left: 10px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 10px 30px;
+        display: inline-block;
+}
+
+.newButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 20px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 10px 30px;
+        display: inline-block;
 }

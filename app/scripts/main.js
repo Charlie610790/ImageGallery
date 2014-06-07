@@ -4,14 +4,14 @@ var Photo = Backbone.Model.extend({
     idAttribute: '_id',
 
     defaults: {
-    	comments: 'No Comments',
-        url: 'http://37.media.tumblr.com/tumblr_mdgfpehkYN1r8cvzdo1_500.gif'
+    	comment: 'Go Red Sox',
+        url: 'http://content.sportslogos.net/logos/53/53/full/ba0u6pkfm7zmorlyyy00cx0os.gif'
     },
 });
  
 var PhotoCollection = Backbone.Collection.extend({
     model: Photo,
-    url: 'http://tiny-pizza-server.herokuapp.com/collections/photos'
+    url: 'http://tiny-pizza-server.herokuapp.com/collections/Charliephoto'
 });
 
 
@@ -41,43 +41,26 @@ var ThumbnailView = Backbone.View.extend({
     },
  
     showDetailView: function(){
-        var detail = new DetailView({model: this.model});
-        	$('.thumbnailContainer').remove();
-        	detail.render()
-    }	
+    detailViewInstance.remove();
+    detailViewInstance = new DetailView({model: this.model})
+  }
 
 });
 ///////////////THUMBNAIL VIEW END
 
-var DetailView = Backbone.View.extend({
 
-	className: 'detail',
- 
-    detailTemplate: _.template($('.detail-template').text()),
- 
-    initialize: function(){
-        $('.editContainer').append(this.el);
-        this.render();
-    },
- 
-    render: function(){
-        var renderedTemplate = this.detailTemplate(this.model.attributes);
-        this.$el.html(renderedTemplate).removeClass('thumbnail');
-    },
-});
+var photos = new PhotoCollection();
+var detailViewInstance;
 
-var AppView = Backbone.View.extend({
- 
-    initialize: function(){
-        this.listenTo(coolPhotos, 'add', function(photo){
-            new ThumbnailView({model: photo});
-        });
-    }
-});
 
-var coolPhotos = new PhotoCollection();
+photos.fetch().done(function(){
+  photos.each(function(photo){
 
-var app = new AppView();
+    new ThumbnailView({model: photo});
 
-coolPhotos.fetch();
+  })
+
+  detailViewInstance = new DetailView({ model: photos.first() })
+})
+
 
