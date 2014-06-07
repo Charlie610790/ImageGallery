@@ -7,8 +7,8 @@ var DetailView = Backbone.View.extend({
     template: _.template($('.detail-view-template').text()),
 
     events: {
-        'click .save-button': 'updateModel',
-        'click .new-button': 'createPhoto'
+        'click .saveButton': 'updateModel',
+        'click .newButton': 'createPhoto'
     },
 
     initialize: function(){
@@ -35,13 +35,13 @@ var DetailView = Backbone.View.extend({
 
         this.model.set({
             url:      this.$el.find('.url-input').val(),
-            comment:  this.$el.find('.caption-input').val()
+            comment:  this.$el.find('.name-input').val()
         });
 
         photos.add(this.model);
 
         this.model.save().done(function(){
-            that.$el.find('.status').html('Saved!');
+            that.$el.find('.status').html('You Added A New Player!');
         });
     },
 
@@ -52,7 +52,7 @@ var DetailView = Backbone.View.extend({
         this.model = photoInstance;
 
         this.$el.find('input').val('');
-        this.$el.find('img').attr('src',' http://placehold.it/350x400');
+        this.$el.find('img').attr('src','http://placehold.it/370x300');
 
     }
 });
