@@ -41,9 +41,9 @@ var ThumbnailView = Backbone.View.extend({
     },
  
     showDetailView: function(){
-    detailViewInstance.remove();
-    detailViewInstance = new DetailView({model: this.model})
-  }
+        detailViewInstance.remove();
+        detailViewInstance = new DetailView({model: this.model});
+    }
 
 });
 ///////////////THUMBNAIL VIEW END
@@ -54,13 +54,13 @@ var detailViewInstance;
 
 
 photos.fetch().done(function(){
-  photos.each(function(photo){
+    photos.each(function(photo){
 
-    new ThumbnailView({model: photo});
+        new ThumbnailView({model: photo});
 
-  })
+    });
 
-  detailViewInstance = new DetailView({ model: photos.first() })
-})
+    detailViewInstance = new DetailView({ model: photos.first() });
+});
 
 
