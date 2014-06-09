@@ -63,4 +63,6 @@ photos.fetch().done(function(){
     detailViewInstance = new DetailView({ model: photos.first() });
 });
 
+var app = new AppRouter();
 
+Backbone.history.start();

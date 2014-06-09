@@ -23,6 +23,14 @@
         <div class="container">
             <div class="header">Red Sox Players</div>
             <div class="centerContainer">
+                <div class="toolbar">
+                    <a href="#" style="text-decoration:none;"><div class="homeButton">
+                        HOME
+                    </div></a>
+                    <a href="#players" style="text-decoration:none;"><div class="playersButton">
+                        PLAYERS
+                    </div></a>
+                </div>
                 <div class="editContainer"></div>
                 <div class="thumbnailContainer" style="overflow-y:scroll;"></div>
             </div>
@@ -35,6 +43,7 @@
 
         <script type="text/template" class="detail-view-template">
             <img src="<%= url %>" width="370" height="300" class="editImage">
+            <div class="placeholderImage"></div>
             <input class="url-input" value="<%= url %>" placeholder="Enter a url...">
             <input class="name-input" value="<%= comment %>" placeholder="Enter a caption...">
             <div>
@@ -63,8 +72,12 @@
         </script>
  
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        
         <script src="scripts/detailview.js"></script>
+        <script src="scripts/router.js"></script>
         <script src="scripts/main.js"></script>
+
+        
         <!-- endbuild -->
 </body>
 </html>
