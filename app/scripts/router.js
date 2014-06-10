@@ -9,9 +9,7 @@ var AppRouter = Backbone.Router.extend({
     },
  
     initialize: function () {
-        $('.editImage').attr('src','http://placehold.it/370x300');
-        $('.url-input').val('');
-        $('.name-input').val('');
+        
     },
  
     renderHome: function () {
@@ -27,10 +25,7 @@ var AppRouter = Backbone.Router.extend({
         
     },
  
-    renderPlayer: function (username) {
-        console.log('profile route for', username);
-        $('.container').html('Check out '+ username + '\'s cool profile ');
-        $('.container').append('<a href="/#users/'+username + '/favorites">'+ username +  '\'s favorites </a>');
+    renderPlayer: function (id) {
     },
 
 });
