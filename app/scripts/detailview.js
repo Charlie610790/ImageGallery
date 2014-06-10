@@ -8,7 +8,8 @@ var DetailView = Backbone.View.extend({
 
     events: {
         'click .saveButton': 'updateModel',
-        'click .newButton': 'createPhoto'
+        'click .newButton': 'createPhoto',
+        'click .deleteButton': 'deletePlayer'
     },
 
     initialize: function(){
@@ -43,6 +44,11 @@ var DetailView = Backbone.View.extend({
         this.model.save().done(function(){
             that.$el.find('.status').html('You Added A New Player!');
         });
+    },
+
+    deletePlayer: function(){
+
+        this.model.destroy();
     },
 
     createPhoto: function(){
