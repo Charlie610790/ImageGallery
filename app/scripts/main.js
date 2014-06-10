@@ -4,7 +4,7 @@ var Photo = Backbone.Model.extend({
     idAttribute: '_id',
 
     defaults: {
-    	comment: 'Go Red Sox',
+        comment: 'Go Red Sox',
         url: 'http://content.sportslogos.net/logos/53/53/full/ba0u6pkfm7zmorlyyy00cx0os.gif'
     },
 });
@@ -33,9 +33,9 @@ var ThumbnailView = Backbone.View.extend({
     },
  
     render: function(){
-    	if (this.model.attributes.hasOwnProperty('url')) {
+        if (this.model.attributes.hasOwnProperty('url')) {
             var renderedTemplate = this.thumbnailTemplate(this.model.attributes);
-        	this.$el.html(renderedTemplate);
+            this.$el.html(renderedTemplate);
         }
         
     },

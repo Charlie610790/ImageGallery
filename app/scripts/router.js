@@ -22,7 +22,7 @@ var AppRouter = Backbone.Router.extend({
     },
  
     renderPlayers: function () {
-        $('.container').html();
+        $('.editImage').attr('src','http://www.sports-logos-screensavers.com/user/Boston_Red_Sox.jpg');
         console.log('render players works');
         
     },

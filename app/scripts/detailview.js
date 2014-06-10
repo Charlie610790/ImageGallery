@@ -51,8 +51,10 @@ var DetailView = Backbone.View.extend({
 
         this.model = photoInstance;
 
-        this.$el.find('input').val('');
+        this.$el.find('.url-input').val('');
+        this.$el.find('.name-input').val('');
         this.$el.find('img').attr('src','http://placehold.it/370x300');
+
 
     }
 });
