@@ -110,6 +110,73 @@ body {
     border: 2px solid black;
 }
 
+.activeRosterContainer {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    height: 600px;
+    width: 200px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+}
+
+.activeContainer {
+    display: inline-block;
+    vertical-align: top;
+    background-color: green;
+    height: 580px;
+    width: 200px;
+    color: white;
+    border-top: 2px solid black;
+
+}
+
+.injuredListContainer {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    height: 600px;
+    width: 200px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+}
+
+.injuredContainer {
+    display: inline-block;
+    vertical-align: top;
+    background-color: red;
+    height: 580px;
+    width: 200px;
+    color: white;
+    border-top: 2px solid black;
+
+}
+
+.aaaListContainer {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    height: 600px;
+    width: 200px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+}
+
+.aaaContainer {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    height: 580px;
+    width: 200px;
+    color: black;
+    border-top: 2px solid black;
+
+}
+
+
 input {
     display: inline-block;
     border: 5px solid white; 

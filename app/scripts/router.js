@@ -15,17 +15,17 @@ var AppRouter = Backbone.Router.extend({
     renderHome: function () {
         console.log('render home works');
         $('.editImage').attr('src','http://placehold.it/370x300');
-        $('.url-input').val('URL HERE');
-        $('.name-input').val('PLAYER NAME HERE');
+        $('.url-input').val('');
+        $('.name-input').val('');
     },
  
     renderPlayers: function () {
-        $('.editImage').attr('src','http://www.sports-logos-screensavers.com/user/Boston_Red_Sox.jpg');
+        $('.editImage').attr('src','http://placehold.it/370x300');
         console.log('render players works');
         
     },
  
-    renderPlayer: function (id) {
+    renderPlayer: function () {
     },
 
 });

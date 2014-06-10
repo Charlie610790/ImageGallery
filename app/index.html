@@ -32,7 +32,18 @@
                     </div></a>
                 </div>
                 <div class="editContainer"></div>
-                <div class="thumbnailContainer" style="overflow-y:scroll;"></div>
+                <div class="activeRosterContainer">
+                    <div class="activeRoster">Active Roster</div>
+                    <div class="activeContainer" style="overflow-y:scroll;"></div>
+                </div>
+                <div class="injuredListContainer">
+                    <div class="injuredPlayer">Injured Players</div>
+                    <div class="injuredContainer" style="overflow-y:scroll;"></div>
+                </div>
+                <div class="aaaListContainer" style="overflow-y:scroll;">
+                    <div class="aaaPlayer">AAA Players</div>
+                    <div class="aaaContainer" style="overflow-y:scroll;"></div>
+                </div>
             </div>
         </div>
 
@@ -45,7 +56,7 @@
             <img src="<%= url %>" width="370" height="300" class="editImage">
             <div class="placeholderImage"></div>
             <input class="url-input" value="<%= url %>" placeholder="Enter a url...">
-            <input class="name-input" value="<%= comment %>" placeholder="Enter a caption...">
+            <input class="name-input" value="<%= comment %>" placeholder="Enter a name...">
             <div>
                 <div class="saveButton">Save</div>
                 <div class="newButton">New</div>
