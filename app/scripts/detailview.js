@@ -9,7 +9,9 @@ var DetailView = Backbone.View.extend({
     events: {
         'click .saveButton': 'updateModel',
         'click .newButton': 'createPhoto',
-        'click .deleteButton': 'deletePlayer'
+        'click .deleteButton': 'deletePlayer',
+        'click .moveButton': 'movePlayer'
+
     },
 
     initialize: function(){
@@ -17,9 +19,8 @@ var DetailView = Backbone.View.extend({
             new ThumbnailView({model: photo});
         });
 
-        this.listenTo(this.model, 'change', this.render);
 
-        $('.editContainer').append(this.el);
+        $('.editContainer').prepend(this.el);
         this.render();
     },
 
@@ -47,8 +48,12 @@ var DetailView = Backbone.View.extend({
     },
 
     deletePlayer: function(){
-
         this.model.destroy();
+    },
+
+    movePlayer: function(){
+
+        InjuredPlayer.add(this.model);
     },
 
     createPhoto: function(){
