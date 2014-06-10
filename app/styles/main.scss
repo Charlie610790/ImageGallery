@@ -288,11 +288,11 @@ input {
         border: 1px solid #333333;
         font-size: 20px;
         margin-top: 14px;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
-        padding: 10px 30px;
+        padding: 8px 15px;
         display: inline-block;
 }
 
@@ -303,8 +303,39 @@ input {
         font-size: 20px;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
-        padding: 10px 30px;
+        padding: 8px 15px;
         display: inline-block;
+        margin-top: 14px;
+        margin-right: 5px;
+        margin-left: 10px;
+}
+
+.deleteButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 20px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        display: inline-block;
+        margin-top: 14px;
+        margin-right: 5px;
+        margin-left: 5px;
+}
+
+.moveButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 20px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        display: inline-block;
+        margin-top: 14px;
+        margin-right: 0px;
+        margin-left: 5px;
 }
 
 .playerName {
