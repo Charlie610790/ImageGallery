@@ -111,6 +111,7 @@ body {
 }
 
 .editContainer {
+    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: #ffffff;
@@ -120,6 +121,7 @@ body {
 }
 
 .activeRosterContainer {
+    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: white;
@@ -142,6 +144,7 @@ body {
 }
 
 .injuredListContainer {
+    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: white;
@@ -164,6 +167,7 @@ body {
 }
 
 .aaaListContainer {
+    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: white;
@@ -437,6 +441,22 @@ input {
 
 }
 
+.activeCollectionButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 10px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-left: 10px;
+        display: none;
+        width: 80px;
+
+}
+
 .footer {
     display: inline-block;
     margin-top: 15px;
@@ -463,7 +483,6 @@ input {
 
 }
 
-
 .redSox {
     text-align: center;
     color: #002244;
@@ -473,10 +492,7 @@ input {
     height: 75px;
     vertical-align: top;
     font-size: 12px;
-
-
 }
-
 
 @media screen and (max-width: 1025px) {
     .aaaListContainer {

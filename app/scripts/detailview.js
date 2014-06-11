@@ -14,7 +14,8 @@ var DetailView = Backbone.View.extend({
         'click .moveToAAAButton'       : 'movePlayerToAAA',
         'click .moveToActiveButton'    : 'movePlayerToActive',
         'click .moveToActiveDLButton'  : 'movePlayerToActiveDL',
-        'click .dlCollectionButoon'    : 'turnOnDLCollection'
+        'click .dlCollectionButoon'    : 'turnOnDLCollection',
+        'click .aaaCollectionButton'   : 'turnOnAAACollection'
 
 
     },
@@ -105,13 +106,35 @@ var DetailView = Backbone.View.extend({
 
     },
 
-    // turnOnDLCollection: function(){
+    turnOnDLCollection: function(){
 
-    // $('.editContainer').(this.el);
+    $('.injuredListContainer').toggle();
+    $('.activeRosterContainer').toggle();
+    $('.activeCollectionButton').toggle();
+    $('.dlCollectionButoon').toggle();
+    
 
         
-    // },
+    },
 
+    turnOnAAACollection: function(){
+
+    $('.activeRosterContainer').toggle();
+    $('.aaaListContainer').toggle();
+
+        
+    },
+
+    turnOnActiveCollection: function(){
+
+    $('.injuredListContainer').toggle();
+    $('.activeRosterContainer').toggle();
+    $('.activeCollectionButton').toggle();
+    $('.dlCollectionButoon').toggle();
+    
+
+        
+    },
 
 
 
