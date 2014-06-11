@@ -7,12 +7,14 @@ var DetailView = Backbone.View.extend({
     template: _.template($('.detail-view-template').text()),
 
     events: {
-        'click .saveButton'          : 'updateModel',
-        'click .newButton'           : 'createPhoto',
-        'click .deleteButton'        : 'deletePlayer',
-        'click .moveToInjuredButton' : 'movePlayerToDL',
-        'click .moveToAAAButton'     : 'movePlayerToAAA',
-        'click .moveToActiveButton'  : 'movePlayerToActive'
+        'click .saveButton'            : 'updateModel',
+        'click .newButton'             : 'createPhoto',
+        'click .deleteButton'          : 'deletePlayer',
+        'click .moveToInjuredButton'   : 'movePlayerToDL',
+        'click .moveToAAAButton'       : 'movePlayerToAAA',
+        'click .moveToActiveButton'    : 'movePlayerToActive',
+        'click .moveToActiveDLButton'  : 'movePlayerToActiveDL'
+
 
     },
 
@@ -55,29 +57,37 @@ var DetailView = Backbone.View.extend({
 
     movePlayerToDL: function(){
 
-    $.post('http://tiny-pizza-server.herokuapp.com/collections/injuredListContainer', { 
-            url     : this.model.attributes.url, 
+        $.post('http://tiny-pizza-server.herokuapp.com/collections/injuredListContainer', {
+            url     : this.model.attributes.url,
             comment : this.model.attributes.comment
-    });
-        this.model.destroy().done
+        });
+        this.model.destroy().done;
     },
 
     movePlayerToAAA: function(){
 
-        $.post('http://tiny-pizza-server.herokuapp.com/collections/aaaContainer', { 
-            url     : this.model.attributes.url, 
+        $.post('http://tiny-pizza-server.herokuapp.com/collections/aaaContainer', {
+            url     : this.model.attributes.url,
             comment : this.model.attributes.comment
         });
-        this.model.destroy().done
+        this.model.destroy().done;
     },
 
     movePlayerToActive: function(){
 
-        $.post('http://tiny-pizza-server.herokuapp.com/collections/Charliephoto', { 
-            url     : this.model.attributes.url, 
+        $.post('http://tiny-pizza-server.herokuapp.com/collections/Charliephoto', {
+            url     : this.model.attributes.url,
             comment : this.model.attributes.comment
         });
-        this.model.destroy().done
+        this.model.destroy().done;
+    },
+
+     movePlayerToActiveDL: function(){
+
+        $.post('http://tiny-pizza-server.herokuapp.com/collections/injuredListContainer', {
+            url     : this.model.attributes.url,
+            comment : this.model.attributes.comment
+        });
     },
 
 

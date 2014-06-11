@@ -374,6 +374,21 @@ input {
         margin-bottom: 14px;
 }
 
+.moveToActiveDLButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 14px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        display: inline-block;
+        margin-top: 7px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-bottom: 14px;
+}
+
 .playerName {
     text-align: center;
 }
