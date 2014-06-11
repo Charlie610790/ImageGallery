@@ -13,7 +13,8 @@ var DetailView = Backbone.View.extend({
         'click .moveToInjuredButton'   : 'movePlayerToDL',
         'click .moveToAAAButton'       : 'movePlayerToAAA',
         'click .moveToActiveButton'    : 'movePlayerToActive',
-        'click .moveToActiveDLButton'  : 'movePlayerToActiveDL'
+        'click .moveToActiveDLButton'  : 'movePlayerToActiveDL',
+        'click .dlCollectionButoon'    : 'turnOnDLCollection'
 
 
     },
@@ -102,5 +103,17 @@ var DetailView = Backbone.View.extend({
         this.$el.find('img').attr('src','http://placehold.it/370x300');
 
 
-    }
+    },
+
+    // turnOnDLCollection: function(){
+
+    // $('.editContainer').(this.el);
+
+        
+    // },
+
+
+
+
+
 });
