@@ -68,8 +68,12 @@ body {
     text-align: center;
     color: #ffffff;
     font-family: Helvetica;
-    font-size: 40px;
     margin-bottom: 10px;
+    width: 630px;
+    height: 200px;
+    background-image: url("http://i55.photobucket.com/albums/g160/truthserum607/sigs/Boston_RedSox.png");
+    background-size:630px 200px;
+    margin-left: 200px;
 }
 
 .centerContainer {
@@ -433,7 +437,48 @@ input {
 
 }
 
-@media screen and (max-width: 1050px) {
+.footer {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: Helvetica;
+    width: 75px;
+    height: 75px;
+    background-image: url("http://boston.redsox.mlb.com/images/fan_forum/social_media/y2013/bos_beard/players/gomes.png");
+    background-size: 75px 75px;
+    margin-left: 40px;
+}
+
+.copyright {
+    text-align: center;
+    color: #002244;
+    font-family: Helvetica;
+    display: inline-block;
+    margin-top: 45px;
+    height: 75px;
+    vertical-align: top;
+    font-size: 12px;
+    margin-left: 300px;
+
+
+}
+
+
+.redSox {
+    text-align: center;
+    color: #002244;
+    font-family: Helvetica;
+    display: inline-block;
+    margin-top: 45px;
+    height: 75px;
+    vertical-align: top;
+    font-size: 12px;
+
+
+}
+
+
+@media screen and (max-width: 1025px) {
     .aaaListContainer {
         display: none;
     }
@@ -442,17 +487,31 @@ input {
         display: inline-block;
     }
 
+    .header {
+        margin-left: 80px;
+    }
 
+    .copyright {
+        margin-left: 195px;
+    }
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 815px) {
     .injuredListContainer {
         display: none;
     }
 
     .dlCollectionButoon {
         display: inline-block;
+    }
+
+    .header {
+        margin-left: 0px;
+    }
+
+    .copyright {
+        margin-left: 90px;
     }
 
 }
