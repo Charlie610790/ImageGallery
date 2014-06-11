@@ -13,7 +13,6 @@ var AppRouter = Backbone.Router.extend({
     },
  
     renderHome: function () {
-        console.log('render home works');
         $('.editImage').attr('src','http://placehold.it/370x300');
         $('.url-input').val('');
         $('.name-input').val('');

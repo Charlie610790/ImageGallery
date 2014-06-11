@@ -61,7 +61,9 @@ var ThumbnailView = Backbone.View.extend({
  
     initialize: function(){
         $('.activeContainer').append(this.el);
-        this.listenTo(this.model, 'destroy', this.remove);
+        this.listenTo(this.model, 'change', this.render);
+        this.listenTo(this.model, 'add', this.render);
+        this.listenTo(this.model, 'remove', this.render);
         this.render();
     },
  
@@ -94,6 +96,9 @@ var InjuredView = Backbone.View.extend({
  
     initialize: function(){
         $('.injuredContainer').append(this.el);
+        this.listenTo(this.model, 'change', this.render);
+        this.listenTo(this.model, 'add', this.render);
+        this.listenTo(this.model, 'remove', this.render);
         this.render();
     },
  
@@ -126,6 +131,9 @@ var AAAView = Backbone.View.extend({
  
     initialize: function(){
         $('.aaaContainer').append(this.el);
+        this.listenTo(this.model, 'change', this.render);
+        this.listenTo(this.model, 'add', this.render);
+        this.listenTo(this.model, 'remove', this.render);
         this.render();
     },
  

@@ -105,7 +105,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: #ffffff;
-    height: 600px;
+    height: 610px;
     width: 380px;
     border: 2px solid black;
 }
@@ -114,7 +114,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: white;
-    height: 600px;
+    height: 610px;
     width: 200px;
     border: 2px solid black;
     color: black;
@@ -125,7 +125,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: green;
-    height: 580px;
+    height: 590px;
     width: 200px;
     color: white;
     border-top: 2px solid black;
@@ -136,7 +136,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: white;
-    height: 600px;
+    height: 610px;
     width: 200px;
     border: 2px solid black;
     color: black;
@@ -147,7 +147,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: red;
-    height: 580px;
+    height: 590px;
     width: 200px;
     color: white;
     border-top: 2px solid black;
@@ -158,7 +158,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: white;
-    height: 600px;
+    height: 610px;
     width: 200px;
     border: 2px solid black;
     color: black;
@@ -169,7 +169,7 @@ body {
     display: inline-block;
     vertical-align: top;
     background-color: white;
-    height: 580px;
+    height: 590px;
     width: 200px;
     color: black;
     border-top: 2px solid black;
@@ -192,7 +192,7 @@ input {
     padding: 10px;
     background: rgba(255,255,255,0.5);
     margin: 15px 0 0px 10px;
-    width: 263px;
+    width: 330px;
 }
 
 .urlInput {
@@ -286,8 +286,8 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 20px;
-        margin-top: 14px;
+        font-size: 14px;
+        margin-top: 7px;
         margin-right: 5px;
         margin-left: 5px;
         box-shadow: inset 0 0 0 1px white;
@@ -300,12 +300,12 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 20px;
+        font-size: 14px;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
         display: inline-block;
-        margin-top: 14px;
+        margin-top: 7px;
         margin-right: 5px;
         margin-left: 10px;
 }
@@ -314,28 +314,64 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 20px;
+        font-size: 14px;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
         display: inline-block;
-        margin-top: 14px;
+        margin-top: 7px;
         margin-right: 5px;
         margin-left: 5px;
 }
 
-.moveButton {
+.moveButtons {
+    margin-top: 7px;
+    margin-left: 7px;
+    text-align: center;
+}
+
+.moveToInjuredButton {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 20px;
+        font-size: 14px;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
         display: inline-block;
-        margin-top: 14px;
+        margin-top: 7px;
+        margin-right: 5px;
+        margin-left: 10px;
+}
+
+.moveToAAAButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 14px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        display: inline-block;
+        margin-top: 7px;
         margin-right: 0px;
         margin-left: 5px;
+
+}
+
+.moveToActiveButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 14px;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        display: inline-block;
+        margin-top: 7px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-bottom: 14px;
 }
 
 .playerName {
