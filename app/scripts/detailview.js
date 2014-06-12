@@ -15,7 +15,9 @@ var DetailView = Backbone.View.extend({
         'click .moveToActiveButton'    : 'movePlayerToActive',
         'click .moveToActiveDLButton'  : 'movePlayerToActiveDL',
         'click .dlCollectionButoon'    : 'turnOnDLCollection',
-        'click .aaaCollectionButton'   : 'turnOnAAACollection'
+        'click .aaaCollectionButton'   : 'turnOnAAACollection',
+        'click .activeCollectionButton'   : 'turnOnActiveCollection'
+
 
 
     },
@@ -108,29 +110,35 @@ var DetailView = Backbone.View.extend({
 
     turnOnDLCollection: function(){
 
-    $('.injuredListContainer').toggle();
-    $('.activeRosterContainer').toggle();
-    $('.activeCollectionButton').toggle();
-    $('.dlCollectionButoon').toggle();
-    
+    $('.injuredListContainer').show();
+    $('.activeCollectionButton').show();
+    $('.dlCollectionButoon').hide();
+    $('.activeRosterContainer').hide();
+    $('.aaaListContainer').hide();
+    $('.aaaCollectionButton').show();
 
-        
+
     },
 
     turnOnAAACollection: function(){
 
-    $('.activeRosterContainer').toggle();
-    $('.aaaListContainer').toggle();
-
+    $('.injuredListContainer').hide();
+    $('.activeCollectionButton').show();
+    $('.dlCollectionButoon').show();
+    $('.activeRosterContainer').hide();
+    $('.aaaListContainer').show();
+    $('.aaaCollectionButton').hide();
         
     },
 
     turnOnActiveCollection: function(){
 
-    $('.injuredListContainer').toggle();
-    $('.activeRosterContainer').toggle();
-    $('.activeCollectionButton').toggle();
-    $('.dlCollectionButoon').toggle();
+    $('.injuredListContainer').hide();
+    $('.activeCollectionButton').hide();
+    $('.dlCollectionButoon').show();
+    $('.activeRosterContainer').show();
+    $('.aaaListContainer').hide();
+    $('.aaaCollectionButton').show();
     
 
         

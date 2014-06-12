@@ -442,6 +442,7 @@ input {
 }
 
 .activeCollectionButton {
+        float: left;
         background: #333333;
         color: white;
         border: 1px solid #333333;
@@ -454,7 +455,6 @@ input {
         margin-left: 10px;
         display: none;
         width: 80px;
-
 }
 
 .footer {
@@ -479,8 +479,6 @@ input {
     vertical-align: top;
     font-size: 12px;
     margin-left: 300px;
-
-
 }
 
 .redSox {
@@ -510,7 +508,6 @@ input {
     .copyright {
         margin-left: 195px;
     }
-
 }
 
 @media screen and (max-width: 815px) {
@@ -529,19 +526,4 @@ input {
     .copyright {
         margin-left: 90px;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
