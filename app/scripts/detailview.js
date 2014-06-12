@@ -7,16 +7,18 @@ var DetailView = Backbone.View.extend({
     template: _.template($('.detail-view-template').text()),
 
     events: {
-        'click .saveButton'            : 'updateModel',
-        'click .newButton'             : 'createPhoto',
-        'click .deleteButton'          : 'deletePlayer',
-        'click .moveToInjuredButton'   : 'movePlayerToDL',
-        'click .moveToAAAButton'       : 'movePlayerToAAA',
-        'click .moveToActiveButton'    : 'movePlayerToActive',
-        'click .moveToActiveDLButton'  : 'movePlayerToActiveDL',
-        'click .dlCollectionButoon'    : 'turnOnDLCollection',
-        'click .aaaCollectionButton'   : 'turnOnAAACollection',
-        'click .activeCollectionButton'   : 'turnOnActiveCollection'
+        'click .saveButton'             : 'updateModel',
+        'click .newButton'              : 'createPhoto',
+        'click .deleteButton'           : 'deletePlayer',
+        'click .moveToInjuredButton'    : 'movePlayerToDL',
+        'click .moveToAAAButton'        : 'movePlayerToAAA',
+        'click .moveToActiveButton'     : 'movePlayerToActive',
+        'click .moveToActiveDLButton'   : 'movePlayerToActiveDL',
+        'click .dlCollectionButoon'     : 'turnOnDLCollection',
+        'click .aaaCollectionButton'    : 'turnOnAAACollection',
+        'click .activeCollectionButton' : 'turnOnActiveCollection',
+        'click .resetCollectionButton'  : 'resetCollections'
+
 
 
 
@@ -116,7 +118,7 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').hide();
     $('.aaaListContainer').hide();
     $('.aaaCollectionButton').show();
-
+    $('.resetCollectionButton').show();
 
     },
 
@@ -128,6 +130,7 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').hide();
     $('.aaaListContainer').show();
     $('.aaaCollectionButton').hide();
+    $('.resetCollectionButton').show();
         
     },
 
@@ -139,12 +142,20 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').show();
     $('.aaaListContainer').hide();
     $('.aaaCollectionButton').show();
-    
-
-        
+    $('.resetCollectionButton').show();
+            
     },
 
+    resetCollections: function(){
 
+    $('.injuredListContainer').show();
+    $('.activeCollectionButton').hide();
+    $('.dlCollectionButoon').hide();
+    $('.activeRosterContainer').show();
+    $('.aaaListContainer').show();
+    $('.aaaCollectionButton').hide();
+    $('.resetCollectionButton').hide();
 
-
+            
+    },
 });

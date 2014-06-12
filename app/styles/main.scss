@@ -28,8 +28,8 @@ body {
 .homeButton {
     text-align: center;
     font-family: Helvetica;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 30;
+    font-size: 1.250em;
     cursor: pointer;
     height: 30px;
 
@@ -42,8 +42,8 @@ body {
 .playersButton {
     text-align: center;
     font-family: Helvetica;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 30;
+    font-size: 1.250em;
     height: 30px;
     cursor: pointer;
 
@@ -233,9 +233,9 @@ input {
     background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
     width: 100px;
     height: 42px;
-    line-height: 42px;
+    line-height: 42;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bolder;
     color: white;
     font-family: helvetica;
@@ -267,9 +267,9 @@ input {
     background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
     width: 100px;
     height: 42px;
-    line-height: 42px;
+    line-height: 42;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bolder;
     color: white;
     font-family: helvetica;
@@ -299,7 +299,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         margin-top: 7px;
         margin-right: 5px;
         margin-left: 5px;
@@ -313,7 +313,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -327,7 +327,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -347,7 +347,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -361,7 +361,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -369,14 +369,13 @@ input {
         margin-top: 7px;
         margin-right: 0px;
         margin-left: 5px;
-
 }
 
 .moveToActiveButton {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -391,7 +390,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 14px;
+        font-size: 0.875em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -409,14 +408,14 @@ input {
 .status {
     text-align: center;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .dlCollectionButoon {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 10px;
+        font-size: 0.625em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -430,7 +429,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 10px;
+        font-size: 0.625em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -446,7 +445,7 @@ input {
         background: #333333;
         color: white;
         border: 1px solid #333333;
-        font-size: 10px;
+        font-size: 0.625em;
         box-shadow: inset 0 0 0 1px white;
         cursor: pointer;
         padding: 8px 15px;
@@ -455,6 +454,21 @@ input {
         margin-left: 10px;
         display: none;
         width: 80px;
+}
+
+.resetCollectionButton {
+        background: #333333;
+        color: white;
+        border: 1px solid #333333;
+        font-size: 0.625em;
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+        padding: 8px 15px;
+        margin-top: 0px;
+        margin-right: 5px;
+        margin-left: 10px;
+        display: none;
+        width: 40px;
 }
 
 .footer {
@@ -477,7 +491,7 @@ input {
     margin-top: 45px;
     height: 75px;
     vertical-align: top;
-    font-size: 12px;
+    font-size: 0.750em;
     margin-left: 300px;
 }
 
@@ -489,7 +503,7 @@ input {
     margin-top: 45px;
     height: 75px;
     vertical-align: top;
-    font-size: 12px;
+    font-size: 0.750em;
 }
 
 @media screen and (max-width: 1025px) {
@@ -500,6 +514,10 @@ input {
     .aaaCollectionButton {
         display: inline-block;
     }
+
+    // .resetCollectionButton {
+    //     display: inline-block;
+    // }
 
     .header {
         margin-left: 80px;
@@ -525,5 +543,23 @@ input {
 
     .copyright {
         margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .activeRosterContainer {
+        display: none;
+    }
+
+    .header {
+        margin-left: 0px;
+        width: 400px;
+        height: 80px;
+        background-image: url("http://i55.photobucket.com/albums/g160/truthserum607/sigs/Boston_RedSox.png");
+        background-size: 400px 80px;
+    }
+
+    .MainFooter {
+        display: none;
     }
 }
