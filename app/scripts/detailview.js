@@ -118,7 +118,7 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').hide();
     $('.aaaListContainer').hide();
     $('.aaaCollectionButton').show();
-    $('.resetCollectionButton').show();
+    // $('.resetCollectionButton').show();
 
     },
 
@@ -130,7 +130,7 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').hide();
     $('.aaaListContainer').show();
     $('.aaaCollectionButton').hide();
-    $('.resetCollectionButton').show();
+    // $('.resetCollectionButton').show();
         
     },
 
@@ -142,7 +142,7 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').show();
     $('.aaaListContainer').hide();
     $('.aaaCollectionButton').show();
-    $('.resetCollectionButton').show();
+    // $('.resetCollectionButton').show();
             
     },
 
@@ -154,8 +154,7 @@ var DetailView = Backbone.View.extend({
     $('.activeRosterContainer').show();
     $('.aaaListContainer').show();
     $('.aaaCollectionButton').hide();
-    $('.resetCollectionButton').hide();
-
-            
+    // $('.resetCollectionButton').hide();
+        
     },
 });
